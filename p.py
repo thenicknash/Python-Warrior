@@ -1,5 +1,7 @@
 import items
 import new_player
+from father_profession import *
+from player_education import *
 
 # Name assignment
 print("\nWhat is your name?  ")
@@ -14,19 +16,27 @@ print("\nWhat was your father's profession?")
 print("Peasant   Farmer   Artisian   Merchant   Knight   Nobility\n")
 player_father_job = input()
 
-# Job
-print("\nWhat was your profession?")
-print("Peasant   Farmer   Schoolboy   Squire   Baron-Son\n")
-player_profession = input()
-
 # Education
 print("\nWhat level of education have you received?")
-print("None   Entery   Apprentice   Expert   Mastery\n")
+print("None   Entry   Apprentice   Expert   Mastery\n")
 player_education = input()
 
-
 # Build player
-new_player = new_player.Hero(player_name, player_kingdom, player_father_job, player_education, player_profession)
+new_player = new_player.MainCharacter(player_name, player_kingdom, player_father_job, player_education)
 
 print()
-print(new_player, "\n")
+# Prints intro message
+print(new_player, "\n\n")
+print("====== STATS ======")
+print("Name: {}".format(new_player.name))
+print("LVL: {}".format(new_player.level))
+print("HP: {}".format(new_player.hit_points))
+print("Strength: {}".format(new_player.strength))
+print("Stamina: {}".format(new_player.stamina))
+print("Intelligence: {}".format(new_player.intelligence))
+print("Heart: {}".format(new_player.heart))
+print("Luck: {}".format(new_player.luck))
+print("Charisma: {}".format(new_player.charisma))
+print("Defense: {}".format(new_player.defense))
+print("===================")
+print("\n")
