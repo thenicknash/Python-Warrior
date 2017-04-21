@@ -23,11 +23,14 @@ class MainCharacter():
 
 	def __str__(self):
 		print("===================== YOUR JOURNEY BEGINS =====================")
-		return "{}, you shall make your motherland of {} proud! Along the way, your father's job being a {} may influence how others view you. Neverthless, with your level of education ({}), you shall surely succeed.".format(self.name, self.kingdom, self.lineage, self.education)
+		if self.lineage == "artisian" and self.lineage == "Artisian":
+			return "{}, you shall make your motherland of {} proud! Along the way, your father's job being an {} may influence how others view you. Nevertheless, with your level of education ({}), you shall surely succeed in this new land named Zida.".format(self.name, self.kingdom, self.lineage, self.education)
+		else:
+			return "{}, you shall make your motherland of {} proud! Along the way, your father's job being a {} may influence how others view you. Nevertheless, with your level of education ({}), you shall surely succeed in this new land named Zida.".format(self.name, self.kingdom, self.lineage, self.education)
 
 
-	def intro_message(self):
-		# Prints intro message
+	def initial_stats_display(self):
+		'''Prints intro message'''
 		print(self, "\n\n")
 		print("====== STATS ======")
 		print("Name: {}".format(self.name))

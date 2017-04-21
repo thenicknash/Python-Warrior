@@ -125,7 +125,7 @@ class PlayerBuilder(MainCharacter):
 			self.defense = 0
 
 
-	def player_education_tester(self, player_father_job):
+	def player_education_tester(self, player_education):
 		if (player_education != "none" and player_education != "None" and player_education != "entry" and player_education != "Entry" and player_education != "apprentice" and player_education != "Apprentice" and player_education != "adept" and player_education != "Adept" and player_education != "expert" and player_education != "Expert" and player_education != "mastery" and player_education != "Mastery"):
 			while(player_education != "none" and player_education != "None" and player_education != "entry" and player_education != "Entry" and player_education != "apprentice" and player_education != "Apprentice" and player_education != "adept" and player_education != "Adept" and player_education != "expert" and player_education != "Expert" and player_education != "mastery" and player_education != "Mastery"):
 				print("\n=============================")
