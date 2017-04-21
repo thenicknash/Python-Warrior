@@ -24,3 +24,22 @@ class MainCharacter():
 	def __str__(self):
 		print("===================== YOUR JOURNEY BEGINS =====================")
 		return "{}, you shall make your motherland of {} proud! Along the way, your father's job being a {} may influence how others view you. Neverthless, with your level of education ({}), you shall surely succeed.".format(self.name, self.kingdom, self.lineage, self.education)
+
+
+	def intro_message(self):
+		# Prints intro message
+		print(self, "\n\n")
+		print("====== STATS ======")
+		print("Name: {}".format(self.name))
+		print("LVL: {}".format(self.level))
+		print("HP: {}".format(self.hit_points))
+		print("Strength: {}".format(self.strength))
+		print("Stamina: {}".format(self.stamina))
+		print("Intelligence: {}".format(self.intelligence))
+		print("Heart: {}".format(self.heart))
+		print("Luck: {}".format(self.luck))
+		print("Charisma: {}".format(self.charisma))
+		print("Defense: {}".format(self.defense))
+		print("===================")
+		print("\n")
+		
