@@ -34,10 +34,10 @@ from character_builder_simulation import *
 # PlayerBuilder.player_education_tester(MainCharacter, player_education)
 
 # # Delete this line after testing
-# player_name = "Nick"
-# player_kingdom = "Caal"
-# player_father_job = 'farmer'
-# player_education = 'entry'
+# # player_name = "Nick"
+# # player_kingdom = "Caal"
+# # player_father_job = 'farmer'
+# # player_education = 'entry'
 
 # # # Build player
 # new_player = PlayerBuilder(player_name, player_kingdom, player_father_job, player_education)
@@ -46,10 +46,10 @@ from character_builder_simulation import *
 # new_player.stats_safety_net()
 # new_player.initial_stats_display()
 
-# Story intro scene
+# # Story intro scene
 # intro_scene_pt_1(new_player.name, new_player.kingdom)
 
-# End game option
+# # End game option
 # end_game_option()	
 
 # Tests current working code
