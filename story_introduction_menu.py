@@ -7,7 +7,7 @@ def intro_scene_pt_1(name, kingdom):
 	print("\nPushing the door open, you step into the local tavern. A few shady characters glare silently at you. The bartender is maticulously scrubbing the bar with a ragged cloth. You head towards him.")
 	print("\nThe bartender looks up.")
 	print("\n--\"Awful late for a nobody to be wonderin' round here, eh?\" the bartender chuckles.")
-
+	# Choice set
 	print("\n1. Got any available rooms?")
 	print("2. What do you mean by that?")
 	print("3. Awful late for a smart ass with a patchy beard.")
@@ -60,9 +60,12 @@ def intro_scene_pt_1(name, kingdom):
 
 
 	# Contact with the shady characters
-	print("\nYou are about to exit the inn when a voice shouts at you.")
-	print("\"")
-	
-
-
-
+	print("\nYou are about to exit the inn when a voice shouts at you.\n")
+	print("--\"Where do you think you're going, bub?\" the growly voice questions.\n")
+	print("Before you can fully turn around, two hands grab your oversize shirt and proceed to thrust you against the wall.\n")
+	print("Quickly, you shove the medium-sized man off of you. Four now surround and corner you. The one farthest right stands between you and the door.\n")
+	print("--\"What the hell is your problem?\" you yell. At this point, the few patrons left are all gawking.\n")
+	print("The four laugh and mock your apparent frazzled look. Who would not be flustered though? The man who shoved you against the wall speaks up.\n")
+	print("--\"See, we don't like you's around here. We know your kind. You're a scout for Ezera!\"\n")
+	print("--\"Ezera? I don't even know what that is!\"\n")
+	print("--\"We'll see what you say after this!\"\n")

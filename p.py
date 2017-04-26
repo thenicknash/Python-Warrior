@@ -3,6 +3,7 @@ from new_player import *
 from player_builder import *
 from story_introduction_menu import *
 from character_builder_simulation import *
+from intro_battle import *
 # from end_game import *
 
 
@@ -34,12 +35,12 @@ from character_builder_simulation import *
 # PlayerBuilder.player_education_tester(MainCharacter, player_education)
 
 # # Delete this line after testing
-# # player_name = "Nick"
-# # player_kingdom = "Caal"
-# # player_father_job = 'farmer'
-# # player_education = 'entry'
+# player_name = "Nick"
+# player_kingdom = "Caal"
+# player_father_job = 'farmer'
+# player_education = 'entry'
 
-# # # Build player
+# Build player
 # new_player = PlayerBuilder(player_name, player_kingdom, player_father_job, player_education)
 # new_player.add_stats_father_job(player_father_job)
 # new_player.add_stats_player_education(player_education)
@@ -49,9 +50,13 @@ from character_builder_simulation import *
 # # Story intro scene
 # intro_scene_pt_1(new_player.name, new_player.kingdom)
 
+# # Intro battle scene
+# introduction_battle(new_player.strength, new_player.defense, new_player.name, new_player.hit_points, new_player.level)
+
 # # End game option
 # end_game_option()	
 
 # Tests current working code
 p_simulation()
+
 
