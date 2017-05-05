@@ -1,6 +1,7 @@
 player_response = None
 
 def intro_scene_pt_1(name, kingdom):
+	player_response = None
 	"""Set-ups the first interactive scene in the story"""
 	print("\n\nThe wind calmly whistles past your ear. The night is still, and you are nearing a quiet town. 'Finally', you think. 'I cannot wait to spend the night in an actual bed.'")
 	print("\nYou step into town under an entrance arch. A single road runs through the middle of the small hub of buildings. Glancing about, you do not see a single soul. You decide to head towards the inn.")
@@ -58,7 +59,10 @@ def intro_scene_pt_1(name, kingdom):
 				elif player_response == "4":
 					print("\n--\"Them? Hah, why don't you find out for yourself?\" the bartender chuckled once more.\n")
 
+	intro_scene_pt_2()
 
+def intro_scene_pt_2():
+	'''This progresses story'''
 	# Contact with the shady characters
 	print("\nYou are about to exit the inn when a voice shouts at you.\n")
 	print("--\"Where do you think you're going, bub?\" the growly voice questions.\n")
@@ -69,3 +73,15 @@ def intro_scene_pt_1(name, kingdom):
 	print("--\"See, we don't like you's around here. We know your kind. You're a scout for Ezera!\"\n")
 	print("--\"Ezera? I don't even know what that is!\"\n")
 	print("--\"We'll see what you say after this!\"\n")
+	
+	begin_intro_battle()
+
+def begin_intro_battle():
+	'''This initiates the battle'''
+	print("\n\nENTER Y TO BEGIN BATTLE!")
+	answer = input("> ")
+	if answer == "Y" or answer == "y":
+		pass
+	else:
+		print('\nPlease enter the correct value (Y)\n')
+		begin_intro_battle()

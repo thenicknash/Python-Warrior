@@ -1,4 +1,4 @@
-from new_player import *
+from main_player import *
 
 class PlayerBuilder(MainCharacter):
 
@@ -145,8 +145,3 @@ class PlayerBuilder(MainCharacter):
 				print("\nWhat was your father's profession?")
 				print("Peasant   Farmer   Artisian   Merchant   Knight   Nobility\n")
 				player_father_job = input("> ")
-
-
-
-
-
