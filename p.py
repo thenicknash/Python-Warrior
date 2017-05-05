@@ -22,22 +22,22 @@ player_education = 'entry'
 
 # Name assignment
 print("\nWhat is your name?  ")
-# player_name = input("> ")
+player_name = input("> ")
 
 # Backstory
 print("\nFrom what kingdom do you reign?")
-# player_kingdom = input("> ")
+player_kingdom = input("> ")
 
 # Lineage
 print("\nWhat was your father's profession?")
 print("Peasant   Farmer   Artisian   Merchant   Knight   Nobility\n")
-# player_father_job = input("> ")
+player_father_job = input("> ")
 PlayerBuilder.player_father_job_tester(MainCharacter, player_father_job)
 
 # Education
 print("\nWhat level of education have you received?")
 print("None   Entry   Apprentice   Expert   Mastery\n")
-# player_education = input("> ")
+player_education = input("> ")
 PlayerBuilder.player_education_tester(MainCharacter, player_education)
 
 # Build player
