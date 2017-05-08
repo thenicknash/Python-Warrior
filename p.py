@@ -1,11 +1,10 @@
-import items
 from random import randint
-from main_player import *
-from player_builder import *
-from story_introduction_menu import *
-# from character_builder_simulation import *
-from intro_battle import *
-# from end_game import *
+from game_mechanics.main_player import *
+from game_mechanics.player_builder import *
+from story.story_introduction_menu import *
+# from tests.character_builder_simulation import *
+from battles.intro_battle import *
+# from game_mechanics.end_game import *
 
 # Initial player variables assigned
 player_name = None

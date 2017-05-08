@@ -1,4 +1,3 @@
-
 def end_game_option():
 	'''Gives the player the option to restart the game or quit'''
 	print("\nGAME OVER\n")
