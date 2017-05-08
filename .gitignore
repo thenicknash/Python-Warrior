@@ -1,2 +1,6 @@
 .DS_Store
 /__pycache__
+battles/__pycache__
+game_mechanics/__pycache__
+story/__pycache__
+tests/__pycache__

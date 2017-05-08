@@ -1,4 +1,4 @@
-from main_player import *
+from game_mechanics.main_player import *
 
 class PlayerBuilder(MainCharacter):
 

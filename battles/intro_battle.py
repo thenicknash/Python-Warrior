@@ -1,7 +1,6 @@
 from random import randint
-from characters import *
-from character_builder_simulation import *
-from items import *
+from game_mechanics.characters import *
+from tests.character_builder_simulation import *
 
 # Battle begins
 def introduction_battle(strength, defense, name, hp, level):
