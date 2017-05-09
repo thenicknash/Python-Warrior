@@ -25,7 +25,7 @@ class MainCharacter():
 
 
 	def __str__(self):
-		print("===================== YOUR JOURNEY BEGINS =====================")
+		print("\n\n===================== YOUR JOURNEY BEGINS =====================")
 		if self.lineage == "artisian" and self.lineage == "Artisian":
 			return "{}, you shall make your motherland of {} proud! Along the way, your father's job being an {} may influence how others view you. Nevertheless, with your level of education ({}), you shall surely succeed in this new land named Zida.".format(self.name, self.kingdom, self.lineage, self.education)
 		else:
@@ -112,9 +112,12 @@ class MainCharacter():
 			self.new_stats_display()
 		elif self.level == level + 2:
 			print("\nWHOA! {} LEVELED UP TO LEVEL {}!".format(self.name.upper(), self.level))
+			self.random_stats_multiplier_on_lvl_up()
 			self.new_stats_display()
 		elif self.level == level + 3:
 			print("\nINCREDIBLE! {} LEVELED UP TO LEVEL {}!".format(self.name.upper(), self.level))
+			self.random_stats_multiplier_on_lvl_up()
+			self.random_stats_multiplier_on_lvl_up()
 			self.new_stats_display()
 
 
@@ -129,9 +132,19 @@ class MainCharacter():
 		self.defense += randint(1,3)
 
 
+	def good_moral_stats_multiplier(self):
+		"""Stats that are totaled when player chooses good moral option.
+		"""
+		self.hit_points += randint(1,3)
+		self.heart += randint(1,3)
 
 
-
+	def bad_moral_stats_multiplier(self):
+		"""Stats that are totaled when player chooses bad moral option.
+		"""
+		self.strength += randint(1,3)
+		self.defense += randint(1,3)
+		self.heart -= randint(1,5)
 
 
 

@@ -1,6 +1,6 @@
 from random import randint
 from game_mechanics.characters import *
-from tests.character_builder_simulation import *
+# from tests.character_builder_simulation import *
 
 # Battle begins
 def introduction_battle(strength, defense, name, hp, level):
@@ -28,7 +28,6 @@ def introduction_battle(strength, defense, name, hp, level):
 		print("\n{} attacked GOON and delivered {} damage!\n".format(name.upper(), player_total_dmg))
 		print("\nGOON attacked {} and delivered {} damage!\n".format(name.upper(), enemy_total_dmg))
 		print("-------------------------------------------------------------------------------")
-
 	elif battle_choice == '2':
 		special_attack_button_pressed(strength, defense, name, hp, level)
 	elif battle_choice == '3':
