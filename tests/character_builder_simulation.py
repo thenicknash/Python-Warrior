@@ -190,8 +190,8 @@ def intro_scene_pt_3(main_player):
 	else:
 		print("\n--------------------------------------")
 		print('Please choose a valid option!')
-		print("--------------------------------------")
-		intro_scene_pt_3()
+		print("--------------------------------------\n\n")
+		intro_scene_pt_3(main_player)
 
 
 def moral_choice_with_goon():

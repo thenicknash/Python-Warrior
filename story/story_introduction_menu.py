@@ -143,7 +143,7 @@ def intro_scene_pt_3(main_player):
 	else:
 		print("\n--------------------------------------")
 		print('Please choose a valid option!')
-		print("--------------------------------------")
+		print("--------------------------------------\n\n")
 		intro_scene_pt_3()
 
 

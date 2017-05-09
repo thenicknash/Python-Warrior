@@ -5,7 +5,6 @@ from story.story_introduction_menu import *
 # You must comment out below line when playing full game
 from tests.character_builder_simulation import *
 from battles.intro_battle import *
-# from game_mechanics.end_game import *
 
 def screen_holder():
 	"""This function is used to help the user pace his/her reading throughout the game
@@ -76,8 +75,20 @@ def intro():
 
 
 
-	# # End game option
-	# end_game_option()	
+# End game option
+def end_game_option():
+	'''Gives the player the option to restart the game or quit'''
+	print("\n==========================GAME OVER===========================\n")
+	print("Would you like to play again? (Y/N)")
+	player_input = input("> ")
+	if player_input == "Y" or player_input == "y":
+		print("\n\n\n\n\n\n\n\n\n\n\n\n==========================NEW GAME===========================\n\n")
+		# intro()
+		p_simulation()
+	elif player_input == "N" or player_input == "n":
+		return
+	else:
+		print("\nPlease enter \'Y\' or \'N\'.\n")
 
 
 if __name__ == '__main__':
@@ -87,6 +98,8 @@ if __name__ == '__main__':
 	# Simulates working code
 	p_simulation()
 
+	# End of game
+	end_game_option()
 
 
 
